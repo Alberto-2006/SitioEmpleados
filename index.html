@@ -8,56 +8,68 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <h1>🏥 IMSS</h1>
-      <span>Sistema de Registro de Empleados</span>
+  <!-- LOGIN -->
+  <div id="pantalla-login">
+    <div class="login-box">
+      <h2>🏥 IMSS</h2>
+      <p>Sistema de Registro de Empleados</p>
+      <input type="text" id="usuario" placeholder="Usuario">
+      <input type="password" id="contrasena" placeholder="Contraseña">
+      <button onclick="iniciarSesion()">Entrar</button>
+      <p id="error-login" style="color:red; display:none;">Usuario o contraseña incorrectos.</p>
     </div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#registro">Registro</a>
-      <a href="#servicios">Servicios</a>
-    </nav>
-  </header>
+  </div>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <h2>Bienvenido al Sistema de Empleados</h2>
-    <p>Registra empleados y genera su código QR de forma rápida y segura.</p>
-    <a href="#registro" class="btn">Registrar Empleado</a>
-  </section>
+  <!-- SITIO PRINCIPAL (oculto hasta login) -->
+  <div id="pantalla-principal" style="display:none;">
 
-  <!-- FORMULARIO -->
-  <section id="registro" class="formulario">
-    <h2>Registro de Empleado</h2>
-    <div class="form-group">
-      <input type="text" id="nombre" placeholder="Nombre completo">
-      <input type="text" id="nss" placeholder="NSS (Número de Seguridad Social)">
-      <input type="text" id="puesto" placeholder="Puesto">
-      <input type="text" id="departamento" placeholder="Departamento">
-      <button onclick="generarQR()">Generar QR</button>
-    </div>
-    <div id="qr-resultado"></div>
-  </section>
+    <header>
+      <div class="logo">
+        <h1>🏥 IMSS</h1>
+        <span>Sistema de Registro de Empleados</span>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#registro">Registro</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+      </nav>
+    </header>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="servicios">
-    <h2>Servicios</h2>
-    <div class="cards">
-      <div class="card">📋 Registro de empleados</div>
-      <div class="card">🔍 Consulta de datos</div>
-      <div class="card">📲 Generación de QR</div>
-    </div>
-  </section>
+    <section id="inicio" class="hero">
+      <h2>Bienvenido al Sistema de Empleados</h2>
+      <p>Registra empleados y genera su código QR de forma rápida y segura.</p>
+      <a href="#registro" class="btn">Registrar Empleado</a>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 IMSS - Subdelegación Los Reyes La Paz</p>
-  </footer>
+    <section id="registro" class="formulario">
+      <h2>Registro de Empleado</h2>
+      <div class="form-group">
+        <input type="text" id="nombre" placeholder="Nombre completo">
+        <input type="text" id="nss" placeholder="NSS (Número de Seguridad Social)">
+        <input type="text" id="puesto" placeholder="Puesto">
+        <input type="text" id="departamento" placeholder="Departamento">
+        <button onclick="generarQR()">Generar QR</button>
+      </div>
+      <div id="qr-resultado"></div>
+    </section>
+
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <div class="card">📋 Registro de empleados</div>
+        <div class="card">🔍 Consulta de datos</div>
+        <div class="card">📲 Generación de QR</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 IMSS - Subdelegación Los Reyes La Paz</p>
+    </footer>
+
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
