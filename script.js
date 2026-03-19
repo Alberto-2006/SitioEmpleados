@@ -1,3 +1,22 @@
+function iniciarSesion() {
+  var usuario = document.getElementById("usuario").value;
+  var contrasena = document.getElementById("contrasena").value;
+
+  if (usuario === "admin" && contrasena === "imss2026") {
+    document.getElementById("pantalla-login").style.display = "none";
+    document.getElementById("pantalla-principal").style.display = "block";
+  } else {
+    document.getElementById("error-login").style.display = "block";
+  }
+}
+
+function cerrarSesion() {
+  document.getElementById("pantalla-principal").style.display = "none";
+  document.getElementById("pantalla-login").style.display = "flex";
+  document.getElementById("usuario").value = "";
+  document.getElementById("contrasena").value = "";
+}
+
 function generarQR() {
   var nombre = document.getElementById("nombre").value.trim();
   var nss = document.getElementById("nss").value.trim();
