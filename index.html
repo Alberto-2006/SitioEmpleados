@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Empleados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <h1>🏥 IMSS</h1>
+      <span>Sistema de Registro de Empleados</span>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#registro">Registro</a>
+      <a href="#servicios">Servicios</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <h2>Bienvenido al Sistema de Empleados</h2>
+    <p>Registra empleados y genera su código QR de forma rápida y segura.</p>
+    <a href="#registro" class="btn">Registrar Empleado</a>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section id="registro" class="formulario">
+    <h2>Registro de Empleado</h2>
+    <div class="form-group">
+      <input type="text" id="nombre" placeholder="Nombre completo">
+      <input type="text" id="nss" placeholder="NSS (Número de Seguridad Social)">
+      <input type="text" id="puesto" placeholder="Puesto">
+      <input type="text" id="departamento" placeholder="Departamento">
+      <button onclick="generarQR()">Generar QR</button>
+    </div>
+    <div id="qr-resultado"></div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">📋 Registro de empleados</div>
+      <div class="card">🔍 Consulta de datos</div>
+      <div class="card">📲 Generación de QR</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 IMSS - Subdelegación Los Reyes La Paz</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

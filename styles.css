@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #006847;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo h1 {
+  font-size: 28px;
+}
+
+.logo span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background-color: #004d35;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn {
+  background-color: white;
+  color: #006847;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* FORMULARIO */
+.formulario {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  color: #006847;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-group button {
+  padding: 12px;
+  background-color: #006847;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #004d35;
+}
+
+#qr-resultado {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* SERVICIOS */
+.servicios {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.servicios h2 {
+  color: #006847;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #006847;
+  color: #006847;
+  padding: 30px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #006847;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
